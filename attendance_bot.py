@@ -37,6 +37,131 @@ def setup_driver():
 # [Keep all your existing functions unchanged: parse_attendance_table, get_attendance_icon, etc.]
 # ... (paste the rest of your functions here exactly as they are)
 
+def parse_attendance_table(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    attendance_data = []
+    overall_percentage = "0%"
+    
+    overall_label = soup.find(string="Overall(%) :")
+    if overall_label:
+        overall_elem = overall_label.find_next()
+        if overall_elem:
+            overall_percentage = overall_elem.get_text(strip=True)
+    
+    tables = soup.find_all('table')
+    if tables:
+        table = tables[0]
+        rows = table.find_all('tr')
+        
+        for row in rows[1:]:
+            cols = row.find_all('td')
+            if len(cols) >= 5:
+                try:
+                    sno = cols[0].get_text(strip=True)
+                    subject = cols[1].get_text(strip=True)
+                    held_text = cols[2].get_text(strip=True)
+                    present_text = cols[3].get_text(strip=True)
+                    percentage = cols[4].get_text(strip=True)
+                    
+                    if not subject or subject.lower() == 'month':
+                        continue
+                    
+                    held = int(held_text) if held_text.isdigit() else 0
+                    present = int(present_text) if present_text.isdigit() else 0
+                    
+                    attendance_data.append({
+                        'sno': sno,
+                        'subject': subject,
+                        'held': held,
+                        'present': present,
+                        'percentage': percentage
+                    })
+                except:
+                    continue
+    
+    return attendance_data, overall_percentage
+
+def get_attendance_icon(percentage_str):
+    try:
+        num = float(percentage_str.replace('%', '').strip())
+        if num >= 90: return "🟢"
+        elif num >= 75: return "🟡"
+        else: return "🔴"
+    except:
+        return "⚪"
+
+def save_to_github(attendance_list, overall_percent):
+    try:
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(REPO_NAME)
+        
+        data = {
+            'subjects': attendance_list,
+            'overall_percentage': overall_percent,
+            'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M")
+        }
+        
+        content = repo.get_contents(STORED_ATTENDANCE_FILE)
+        repo.update_file(
+            path=content.path,
+            message=f"Update attendance {datetime.now().isoformat()}",
+            content=json.dumps(data, indent=2),
+            sha=content.sha
+        )
+        print("✅ Saved to GitHub")
+        return True
+    except Exception as e:
+        print(f"❌ GitHub save failed: {e}")
+        with open(STORED_ATTENDANCE_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+        return False
+
+def load_from_github():
+    try:
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(REPO_NAME)
+        try:
+            content = repo.get_contents(STORED_ATTENDANCE_FILE)
+            data = json.loads(content.decoded_content.decode())
+            return data.get('subjects', [])
+        except:
+            return None
+    except:
+        return None
+
+def compare_attendance(current, stored):
+    absences = []
+    if not stored: return absences
+    
+    for curr_subject in current:
+        subject_name = curr_subject['subject']
+        stored_subject = next((s for s in stored if s.get('subject') == subject_name), None)
+        
+        if stored_subject:
+            stored_held = stored_subject.get('held', 0)
+            stored_present = stored_subject.get('present', 0)
+            curr_held = curr_subject['held']
+            curr_present = curr_subject['present']
+            
+            if curr_present < stored_present:
+                absences.append({
+                    'subject': subject_name,
+                    'before_held': stored_held, 'before_present': stored_present,
+                    'now_held': curr_held, 'now_present': curr_present,
+                    'classes_missed': stored_present - curr_present,
+                    'type': 'corrected_absent'
+                })
+            elif curr_held > stored_held and curr_present == stored_present:
+                absences.append({
+                    'subject': subject_name,
+                    'before_held': stored_held, 'before_present': stored_present,
+                    'now_held': curr_held, 'now_present': curr_present,
+                    'classes_missed': curr_held - stored_held,
+                    'type': 'missed_class'
+                })
+    return absences
+
+
 def main():
     print("🚀 LBRCE ATTENDANCE BOT STARTED")
     driver = setup_driver()
