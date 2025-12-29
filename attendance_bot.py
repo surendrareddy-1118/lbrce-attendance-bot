@@ -15,7 +15,7 @@ PASSWORD = os.getenv("ERP_PASSWORD")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 GITHUB_TOKEN = os.getenv("GH_TOKEN")
-REPO_NAME = os.getenv("GITHUB_REPOSITORY")  # Auto-detects repo name
+REPO_NAME = os.getenv("GITHUB_REPOSITORY")
 
 STORED_ATTENDANCE_FILE = "stored_attendance.json"
 
@@ -30,12 +30,8 @@ def setup_driver():
     chrome_options.add_argument("--disable-plugins")
     chrome_options.add_argument("--remote-debugging-port=9222")
     
-    # Use pre-installed Chrome + ChromeDriver from GitHub Actions
-    service = Service("/usr/bin/chromedriver")  # Path from browser-actions/setup-chrome
+    service = Service("/usr/bin/chromedriver")
     return webdriver.Chrome(service=service, options=chrome_options)
-
-# [Keep all your existing functions unchanged: parse_attendance_table, get_attendance_icon, etc.]
-# ... (paste the rest of your functions here exactly as they are)
 
 def parse_attendance_table(html):
     soup = BeautifulSoup(html, 'html.parser')
@@ -91,23 +87,30 @@ def get_attendance_icon(percentage_str):
         return "⚪"
 
 def save_to_github(attendance_list, overall_percent):
+    data = {
+        'subjects': attendance_list,
+        'overall_percentage': overall_percent,
+        'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M")
+    }
+    
     try:
         g = Github(GITHUB_TOKEN)
         repo = g.get_repo(REPO_NAME)
         
-        data = {
-            'subjects': attendance_list,
-            'overall_percentage': overall_percent,
-            'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M")
-        }
-        
-        content = repo.get_contents(STORED_ATTENDANCE_FILE)
-        repo.update_file(
-            path=content.path,
-            message=f"Update attendance {datetime.now().isoformat()}",
-            content=json.dumps(data, indent=2),
-            sha=content.sha
-        )
+        try:
+            content = repo.get_contents(STORED_ATTENDANCE_FILE)
+            repo.update_file(
+                path=content.path,
+                message=f"Update attendance {datetime.now().isoformat()}",
+                content=json.dumps(data, indent=2),
+                sha=content.sha
+            )
+        except:
+            repo.create_file(
+                path=STORED_ATTENDANCE_FILE,
+                message=f"Initial attendance {datetime.now().isoformat()}",
+                content=json.dumps(data, indent=2)
+            )
         print("✅ Saved to GitHub")
         return True
     except Exception as e:
@@ -120,13 +123,11 @@ def load_from_github():
     try:
         g = Github(GITHUB_TOKEN)
         repo = g.get_repo(REPO_NAME)
-        try:
-            content = repo.get_contents(STORED_ATTENDANCE_FILE)
-            data = json.loads(content.decoded_content.decode())
-            return data.get('subjects', [])
-        except:
-            return None
+        content = repo.get_contents(STORED_ATTENDANCE_FILE)
+        data = json.loads(content.decoded_content.decode())
+        return data.get('subjects', [])
     except:
+        print("ℹ️ No previous attendance found")
         return None
 
 def compare_attendance(current, stored):
@@ -160,7 +161,6 @@ def compare_attendance(current, stored):
                     'type': 'missed_class'
                 })
     return absences
-
 
 def main():
     print("🚀 LBRCE ATTENDANCE BOT STARTED")
@@ -196,7 +196,7 @@ def main():
             icon = get_attendance_icon(subject['percentage'])
             message += f"{icon} *{subject['subject']}*\n  `{subject['present']}/{subject['held']}` | {subject['percentage']}\n\n"
         
-        message += f"{'='*50}\n\n"
+        message += f"{'='*50}\n"
         
         if stored_attendance:
             absences = compare_attendance(current_attendance, stored_attendance)
@@ -209,9 +209,9 @@ def main():
                     message += f"   Now: `{absence['now_present']}/{absence['now_held']}`\n"
                     message += f"   *MISSED: {absence['classes_missed']} class(es)*\n\n"
             else:
-                message += "✅ *NO ABSENCES* - All good!\n"
+                message += "✅ *NO NEW ABSENCES* - All good!\n"
         else:
-            message += "ℹ️ *FIRST RUN* - Data saved for tomorrow\n"
+            message += "ℹ️ *FIRST RUN* - Baseline saved ✅\n"
         
         requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage", data={
             'chat_id': CHAT_ID, 'text': message, 'parse_mode': 'Markdown'
@@ -223,9 +223,12 @@ def main():
     except Exception as e:
         print(f"❌ Error: {e}")
         error_msg = f"❌ *Bot Error*\n`{str(e)[:1000]}`"
-        requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage", data={
-            'chat_id': CHAT_ID, 'text': error_msg, 'parse_mode': 'Markdown'
-        })
+        try:
+            requests.post(f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage", data={
+                'chat_id': CHAT_ID, 'text': error_msg, 'parse_mode': 'Markdown'
+            })
+        except:
+            pass
     finally:
         driver.quit()
         print("🎉 COMPLETED!")
