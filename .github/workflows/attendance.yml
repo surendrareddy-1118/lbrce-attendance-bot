@@ -37,6 +37,6 @@ jobs:
         ERP_PASSWORD: ${{ secrets.ERP_PASSWORD }}
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+GH_TOKEN: ${{ secrets.GH_TOKEN }}   
         GITHUB_REPO: ${{ github.repository }}
       run: python attendance_bot.py
