@@ -38,5 +38,4 @@ jobs:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
 GH_TOKEN: ${{ secrets.GH_TOKEN }}   
-        GITHUB_REPO: ${{ github.repository }}
       run: python attendance_bot.py
