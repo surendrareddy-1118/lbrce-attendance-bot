@@ -15,8 +15,7 @@ USERNAME = os.getenv("ERP_USERNAME")
 PASSWORD = os.getenv("ERP_PASSWORD")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-REPO_NAME = os.getenv("GITHUB_REPO", "yourusername/lbrce-attendance-bot")
+GITHUB_TOKEN = os.getenv("GH_TOKEN")
 
 STORED_ATTENDANCE_FILE = "stored_attendance.json"
 
