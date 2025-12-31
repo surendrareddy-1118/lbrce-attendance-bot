@@ -17,9 +17,9 @@
     {
       "sno": "3",
       "subject": "Cryptography & Network Security",
-      "held": 15,
-      "present": 13,
-      "percentage": "86.7%"
+      "held": 16,
+      "present": 14,
+      "percentage": "87.5%"
     },
     {
       "sno": "4",
@@ -71,6 +71,6 @@
       "percentage": "66.7%"
     }
   ],
-  "overall_percentage": "82.18 %",
-  "timestamp": "30/12/2025 10:46"
+  "overall_percentage": "82.35 %",
+  "timestamp": "31/12/2025 03:08"
 }
