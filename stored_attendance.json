@@ -66,11 +66,11 @@
     {
       "sno": "10",
       "subject": "Technical Training",
-      "held": 9,
-      "present": 6,
-      "percentage": "66.7%"
+      "held": 12,
+      "present": 9,
+      "percentage": "75.0%"
     }
   ],
-  "overall_percentage": "82.35 %",
-  "timestamp": "31/12/2025 03:08"
+  "overall_percentage": "82.86 %",
+  "timestamp": "31/12/2025 10:45"
 }
