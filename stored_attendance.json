@@ -3,9 +3,9 @@
     {
       "sno": "1",
       "subject": "Compiler Design",
-      "held": 22,
-      "present": 19,
-      "percentage": "86.4%"
+      "held": 23,
+      "present": 20,
+      "percentage": "87.0%"
     },
     {
       "sno": "2",
@@ -71,6 +71,6 @@
       "percentage": "80.0%"
     }
   ],
-  "overall_percentage": "85.07 %",
-  "timestamp": "09/01/2026 10:48"
+  "overall_percentage": "85.19 %",
+  "timestamp": "10/01/2026 10:43"
 }
