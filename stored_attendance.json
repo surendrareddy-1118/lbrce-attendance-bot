@@ -31,9 +31,9 @@
     {
       "sno": "5",
       "subject": "Software Project Management",
-      "held": 17,
-      "present": 12,
-      "percentage": "70.6%"
+      "held": 18,
+      "present": 13,
+      "percentage": "72.2%"
     },
     {
       "sno": "6",
@@ -59,9 +59,9 @@
     {
       "sno": "9",
       "subject": "Technical Paper Writing & IPR",
-      "held": 11,
-      "present": 9,
-      "percentage": "81.8%"
+      "held": 12,
+      "present": 10,
+      "percentage": "83.3%"
     },
     {
       "sno": "10",
@@ -78,6 +78,6 @@
       "percentage": "83.3%"
     }
   ],
-  "overall_percentage": "83.78 %",
-  "timestamp": "23/01/2026 10:51"
+  "overall_percentage": "83.96 %",
+  "timestamp": "24/01/2026 03:07"
 }
