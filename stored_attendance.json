@@ -37,47 +37,54 @@
     },
     {
       "sno": "6",
+      "subject": "Disaster Management",
+      "held": 1,
+      "present": 1,
+      "percentage": "100.0%"
+    },
+    {
+      "sno": "7",
       "subject": "Cloud Computing Lab",
       "held": 15,
       "present": 15,
       "percentage": "100.0%"
     },
     {
-      "sno": "7",
+      "sno": "8",
       "subject": "Cryptography & Network Security Lab",
       "held": 21,
       "present": 15,
       "percentage": "71.4%"
     },
     {
-      "sno": "8",
+      "sno": "9",
       "subject": "Soft Skills",
       "held": 12,
       "present": 12,
       "percentage": "100.0%"
     },
     {
-      "sno": "9",
+      "sno": "10",
       "subject": "Technical Paper Writing & IPR",
       "held": 12,
       "present": 10,
       "percentage": "83.3%"
     },
     {
-      "sno": "10",
+      "sno": "11",
       "subject": "ASSOCIATION",
       "held": 7,
       "present": 6,
       "percentage": "85.7%"
     },
     {
-      "sno": "11",
+      "sno": "12",
       "subject": "Technical Training",
       "held": 18,
       "present": 15,
       "percentage": "83.3%"
     }
   ],
-  "overall_percentage": "82.56 %",
-  "timestamp": "03/02/2026 03:44"
+  "overall_percentage": "82.65 %",
+  "timestamp": "03/02/2026 11:06"
 }
