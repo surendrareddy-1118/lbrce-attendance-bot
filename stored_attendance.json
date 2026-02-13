@@ -17,9 +17,9 @@
     {
       "sno": "3",
       "subject": "Cryptography & Network Security",
-      "held": 31,
-      "present": 27,
-      "percentage": "87.1%"
+      "held": 32,
+      "present": 28,
+      "percentage": "87.5%"
     },
     {
       "sno": "4",
@@ -59,8 +59,8 @@
     {
       "sno": "9",
       "subject": "Soft Skills",
-      "held": 15,
-      "present": 15,
+      "held": 18,
+      "present": 18,
       "percentage": "100.0%"
     },
     {
@@ -85,6 +85,6 @@
       "percentage": "85.7%"
     }
   ],
-  "overall_percentage": "86.22 %",
-  "timestamp": "12/02/2026 11:12"
+  "overall_percentage": "86.43 %",
+  "timestamp": "13/02/2026 03:57"
 }
