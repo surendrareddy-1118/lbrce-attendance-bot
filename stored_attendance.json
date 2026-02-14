@@ -3,30 +3,30 @@
     {
       "sno": "1",
       "subject": "Compiler Design",
-      "held": 33,
-      "present": 27,
-      "percentage": "81.8%"
+      "held": 34,
+      "present": 28,
+      "percentage": "82.4%"
     },
     {
       "sno": "2",
       "subject": "Cloud Computing",
-      "held": 14,
-      "present": 11,
-      "percentage": "78.6%"
+      "held": 15,
+      "present": 12,
+      "percentage": "80.0%"
     },
     {
       "sno": "3",
       "subject": "Cryptography & Network Security",
-      "held": 33,
-      "present": 28,
-      "percentage": "84.8%"
+      "held": 34,
+      "present": 29,
+      "percentage": "85.3%"
     },
     {
       "sno": "4",
       "subject": "Machine Learning",
-      "held": 25,
-      "present": 21,
-      "percentage": "84.0%"
+      "held": 26,
+      "present": 22,
+      "percentage": "84.6%"
     },
     {
       "sno": "5",
@@ -38,9 +38,9 @@
     {
       "sno": "6",
       "subject": "Disaster Management",
-      "held": 31,
-      "present": 30,
-      "percentage": "96.8%"
+      "held": 32,
+      "present": 31,
+      "percentage": "96.9%"
     },
     {
       "sno": "7",
@@ -73,9 +73,9 @@
     {
       "sno": "11",
       "subject": "ASSOCIATION",
-      "held": 8,
-      "present": 7,
-      "percentage": "87.5%"
+      "held": 9,
+      "present": 8,
+      "percentage": "88.9%"
     },
     {
       "sno": "12",
@@ -85,6 +85,6 @@
       "percentage": "85.7%"
     }
   ],
-  "overall_percentage": "85.93 %",
-  "timestamp": "14/02/2026 03:39"
+  "overall_percentage": "86.25 %",
+  "timestamp": "14/02/2026 10:52"
 }
