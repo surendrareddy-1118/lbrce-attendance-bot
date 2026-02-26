@@ -3,9 +3,9 @@
     {
       "sno": "1",
       "subject": "Compiler Design",
-      "held": 39,
+      "held": 40,
       "present": 33,
-      "percentage": "84.6%"
+      "percentage": "82.5%"
     },
     {
       "sno": "2",
@@ -17,9 +17,9 @@
     {
       "sno": "3",
       "subject": "Cryptography & Network Security",
-      "held": 38,
+      "held": 39,
       "present": 32,
-      "percentage": "84.2%"
+      "percentage": "82.1%"
     },
     {
       "sno": "4",
@@ -59,16 +59,16 @@
     {
       "sno": "9",
       "subject": "Soft Skills",
-      "held": 21,
+      "held": 24,
       "present": 21,
-      "percentage": "100.0%"
+      "percentage": "87.5%"
     },
     {
       "sno": "10",
       "subject": "Technical Paper Writing & IPR",
-      "held": 17,
-      "present": 15,
-      "percentage": "88.2%"
+      "held": 19,
+      "present": 16,
+      "percentage": "84.2%"
     },
     {
       "sno": "11",
@@ -85,6 +85,6 @@
       "percentage": "77.8%"
     }
   ],
-  "overall_percentage": "86.41 %",
-  "timestamp": "26/02/2026 03:44"
+  "overall_percentage": "84.81 %",
+  "timestamp": "26/02/2026 11:12"
 }
