@@ -3,16 +3,16 @@
     {
       "sno": "1",
       "subject": "Compiler Design",
-      "held": 42,
-      "present": 35,
-      "percentage": "83.3%"
+      "held": 43,
+      "present": 36,
+      "percentage": "83.7%"
     },
     {
       "sno": "2",
       "subject": "Cloud Computing",
-      "held": 15,
-      "present": 12,
-      "percentage": "80.0%"
+      "held": 16,
+      "present": 13,
+      "percentage": "81.3%"
     },
     {
       "sno": "3",
@@ -38,9 +38,9 @@
     {
       "sno": "6",
       "subject": "Disaster Management",
-      "held": 38,
-      "present": 36,
-      "percentage": "94.7%"
+      "held": 39,
+      "present": 37,
+      "percentage": "94.9%"
     },
     {
       "sno": "7",
@@ -85,6 +85,6 @@
       "percentage": "77.8%"
     }
   ],
-  "overall_percentage": "85.41 %",
-  "timestamp": "02/03/2026 03:40"
+  "overall_percentage": "85.54 %",
+  "timestamp": "02/03/2026 11:07"
 }
