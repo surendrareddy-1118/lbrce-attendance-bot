@@ -17,9 +17,9 @@
     {
       "sno": "3",
       "subject": "Cryptography & Network Security",
-      "held": 43,
-      "present": 36,
-      "percentage": "83.7%"
+      "held": 44,
+      "present": 37,
+      "percentage": "84.1%"
     },
     {
       "sno": "4",
@@ -66,9 +66,9 @@
     {
       "sno": "10",
       "subject": "Technical Paper Writing & IPR",
-      "held": 21,
-      "present": 18,
-      "percentage": "85.7%"
+      "held": 22,
+      "present": 19,
+      "percentage": "86.4%"
     },
     {
       "sno": "11",
@@ -85,6 +85,6 @@
       "percentage": "80.0%"
     }
   ],
-  "overall_percentage": "86.05 %",
-  "timestamp": "06/03/2026 03:38"
+  "overall_percentage": "86.13 %",
+  "timestamp": "06/03/2026 11:01"
 }
