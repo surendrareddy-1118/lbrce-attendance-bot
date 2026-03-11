@@ -17,9 +17,9 @@
     {
       "sno": "3",
       "subject": "Cryptography & Network Security",
-      "held": 46,
-      "present": 39,
-      "percentage": "84.8%"
+      "held": 47,
+      "present": 40,
+      "percentage": "85.1%"
     },
     {
       "sno": "4",
@@ -31,16 +31,16 @@
     {
       "sno": "5",
       "subject": "Software Project Management",
-      "held": 34,
-      "present": 28,
-      "percentage": "82.4%"
+      "held": 35,
+      "present": 29,
+      "percentage": "82.9%"
     },
     {
       "sno": "6",
       "subject": "Disaster Management",
-      "held": 42,
-      "present": 39,
-      "percentage": "92.9%"
+      "held": 43,
+      "present": 40,
+      "percentage": "93.0%"
     },
     {
       "sno": "7",
@@ -80,11 +80,11 @@
     {
       "sno": "12",
       "subject": "Technical Training",
-      "held": 30,
-      "present": 24,
-      "percentage": "80.0%"
+      "held": 33,
+      "present": 27,
+      "percentage": "81.8%"
     }
   ],
-  "overall_percentage": "85.71 %",
-  "timestamp": "11/03/2026 03:36"
+  "overall_percentage": "85.95 %",
+  "timestamp": "11/03/2026 11:06"
 }
