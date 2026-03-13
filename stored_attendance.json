@@ -59,9 +59,9 @@
     {
       "sno": "9",
       "subject": "Soft Skills",
-      "held": 27,
-      "present": 24,
-      "percentage": "88.9%"
+      "held": 30,
+      "present": 27,
+      "percentage": "90.0%"
     },
     {
       "sno": "10",
@@ -85,6 +85,6 @@
       "percentage": "81.8%"
     }
   ],
-  "overall_percentage": "86.06 %",
-  "timestamp": "12/03/2026 11:05"
+  "overall_percentage": "86.17 %",
+  "timestamp": "13/03/2026 03:39"
 }
