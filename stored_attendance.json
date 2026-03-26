@@ -38,9 +38,9 @@
     {
       "sno": "6",
       "subject": "Disaster Management",
-      "held": 47,
+      "held": 48,
       "present": 43,
-      "percentage": "91.5%"
+      "percentage": "89.6%"
     },
     {
       "sno": "7",
@@ -85,6 +85,6 @@
       "percentage": "76.9%"
     }
   ],
-  "overall_percentage": "84.91 %",
-  "timestamp": "25/03/2026 11:12"
+  "overall_percentage": "84.73 %",
+  "timestamp": "26/03/2026 04:07"
 }
