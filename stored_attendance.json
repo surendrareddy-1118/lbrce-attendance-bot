@@ -1,5 +1,34 @@
 {
-  "subjects": [],
-  "overall_percentage": "",
-  "timestamp": "30/06/2026 05:36"
+  "subjects": [
+    {
+      "sno": "1",
+      "subject": "Deep Learning",
+      "held": 1,
+      "present": 1,
+      "percentage": "100.0%"
+    },
+    {
+      "sno": "2",
+      "subject": "Devops",
+      "held": 1,
+      "present": 1,
+      "percentage": "100.0%"
+    },
+    {
+      "sno": "3",
+      "subject": "Constitution of India",
+      "held": 1,
+      "present": 1,
+      "percentage": "100.0%"
+    },
+    {
+      "sno": "4",
+      "subject": "SELF LEARNING",
+      "held": 1,
+      "present": 1,
+      "percentage": "100.0%"
+    }
+  ],
+  "overall_percentage": "100 %",
+  "timestamp": "30/06/2026 12:28"
 }
