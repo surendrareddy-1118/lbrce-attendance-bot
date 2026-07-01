@@ -3,8 +3,8 @@
     {
       "sno": "1",
       "subject": "Deep Learning",
-      "held": 1,
-      "present": 1,
+      "held": 2,
+      "present": 2,
       "percentage": "100.0%"
     },
     {
@@ -30,6 +30,13 @@
     },
     {
       "sno": "5",
+      "subject": "Technical Training",
+      "held": 3,
+      "present": 3,
+      "percentage": "100.0%"
+    },
+    {
+      "sno": "6",
       "subject": "SELF LEARNING",
       "held": 1,
       "present": 1,
@@ -37,5 +44,5 @@
     }
   ],
   "overall_percentage": "100 %",
-  "timestamp": "01/07/2026 05:57"
+  "timestamp": "01/07/2026 13:16"
 }
