@@ -3,8 +3,8 @@
     {
       "sno": "1",
       "subject": "Deep Learning",
-      "held": 4,
-      "present": 4,
+      "held": 5,
+      "present": 5,
       "percentage": "100.0%"
     },
     {
@@ -17,15 +17,15 @@
     {
       "sno": "3",
       "subject": "Devops",
-      "held": 4,
+      "held": 5,
       "present": 4,
-      "percentage": "100.0%"
+      "percentage": "80.0%"
     },
     {
       "sno": "4",
       "subject": "Generative AI",
-      "held": 5,
-      "present": 5,
+      "held": 6,
+      "present": 6,
       "percentage": "100.0%"
     },
     {
@@ -37,40 +37,47 @@
     },
     {
       "sno": "6",
+      "subject": "Prompt Engineering",
+      "held": 3,
+      "present": 3,
+      "percentage": "100.0%"
+    },
+    {
+      "sno": "7",
       "subject": "Constitution of India",
       "held": 2,
       "present": 2,
       "percentage": "100.0%"
     },
     {
-      "sno": "7",
+      "sno": "8",
       "subject": "Evaluation of Industry Internship /Mini Project",
       "held": 2,
       "present": 2,
       "percentage": "100.0%"
     },
     {
-      "sno": "8",
+      "sno": "9",
       "subject": "Technical Training",
       "held": 3,
       "present": 3,
       "percentage": "100.0%"
     },
     {
-      "sno": "9",
+      "sno": "10",
       "subject": "SELF LEARNING",
       "held": 1,
       "present": 1,
       "percentage": "100.0%"
     },
     {
-      "sno": "10",
+      "sno": "11",
       "subject": "ASSOCIATION",
       "held": 2,
       "present": 2,
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "100 %",
-  "timestamp": "06/07/2026 05:44"
+  "overall_percentage": "97.14 %",
+  "timestamp": "06/07/2026 14:04"
 }
