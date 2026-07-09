@@ -17,16 +17,16 @@
     {
       "sno": "3",
       "subject": "Devops",
-      "held": 6,
-      "present": 5,
-      "percentage": "83.3%"
+      "held": 7,
+      "present": 6,
+      "percentage": "85.7%"
     },
     {
       "sno": "4",
       "subject": "Generative AI",
-      "held": 8,
-      "present": 6,
-      "percentage": "75.0%"
+      "held": 9,
+      "present": 7,
+      "percentage": "77.8%"
     },
     {
       "sno": "5",
@@ -45,9 +45,9 @@
     {
       "sno": "7",
       "subject": "Constitution of India",
-      "held": 3,
-      "present": 2,
-      "percentage": "66.7%"
+      "held": 4,
+      "present": 3,
+      "percentage": "75.0%"
     },
     {
       "sno": "8",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "82.69 %",
-  "timestamp": "09/07/2026 05:27"
+  "overall_percentage": "83.64 %",
+  "timestamp": "09/07/2026 13:29"
 }
