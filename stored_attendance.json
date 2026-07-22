@@ -66,9 +66,9 @@
     {
       "sno": "10",
       "subject": "SELF LEARNING",
-      "held": 4,
-      "present": 3,
-      "percentage": "75.0%"
+      "held": 5,
+      "present": 4,
+      "percentage": "80.0%"
     },
     {
       "sno": "11",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "89.19 %",
-  "timestamp": "21/07/2026 12:07"
+  "overall_percentage": "89.29 %",
+  "timestamp": "22/07/2026 04:40"
 }
