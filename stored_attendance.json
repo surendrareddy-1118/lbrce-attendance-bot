@@ -24,16 +24,16 @@
     {
       "sno": "4",
       "subject": "Generative AI",
-      "held": 28,
-      "present": 26,
-      "percentage": "92.9%"
+      "held": 29,
+      "present": 27,
+      "percentage": "93.1%"
     },
     {
       "sno": "5",
       "subject": "Utilization of Electrical Energy",
-      "held": 22,
-      "present": 18,
-      "percentage": "81.8%"
+      "held": 23,
+      "present": 19,
+      "percentage": "82.6%"
     },
     {
       "sno": "6",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "91.15 %",
-  "timestamp": "08/08/2026 03:03"
+  "overall_percentage": "91.24 %",
+  "timestamp": "08/08/2026 11:00"
 }
