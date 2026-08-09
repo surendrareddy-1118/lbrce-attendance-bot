@@ -10,9 +10,9 @@
     {
       "sno": "2",
       "subject": "Human Resources & Project Management",
-      "held": 16,
+      "held": 17,
       "present": 14,
-      "percentage": "87.5%"
+      "percentage": "82.4%"
     },
     {
       "sno": "3",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "91.24 %",
-  "timestamp": "08/08/2026 11:00"
+  "overall_percentage": "90.77 %",
+  "timestamp": "09/08/2026 03:10"
 }
