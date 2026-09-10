@@ -24,9 +24,9 @@
     {
       "sno": "4",
       "subject": "Generative AI",
-      "held": 45,
-      "present": 39,
-      "percentage": "86.7%"
+      "held": 46,
+      "present": 40,
+      "percentage": "87.0%"
     },
     {
       "sno": "5",
@@ -38,16 +38,16 @@
     {
       "sno": "6",
       "subject": "Prompt Engineering",
-      "held": 35,
-      "present": 32,
-      "percentage": "91.4%"
+      "held": 36,
+      "present": 33,
+      "percentage": "91.7%"
     },
     {
       "sno": "7",
       "subject": "Constitution of India",
-      "held": 20,
-      "present": 17,
-      "percentage": "85.0%"
+      "held": 21,
+      "present": 18,
+      "percentage": "85.7%"
     },
     {
       "sno": "8",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "85.96 %",
-  "timestamp": "10/09/2026 06:08"
+  "overall_percentage": "86.11 %",
+  "timestamp": "10/09/2026 14:33"
 }
