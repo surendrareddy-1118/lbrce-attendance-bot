@@ -3,16 +3,16 @@
     {
       "sno": "1",
       "subject": "Deep Learning",
-      "held": 39,
+      "held": 40,
       "present": 29,
-      "percentage": "74.4%"
+      "percentage": "72.5%"
     },
     {
       "sno": "2",
       "subject": "Human Resources & Project Management",
-      "held": 23,
+      "held": 24,
       "present": 18,
-      "percentage": "78.3%"
+      "percentage": "75.0%"
     },
     {
       "sno": "3",
@@ -52,9 +52,9 @@
     {
       "sno": "8",
       "subject": "Evaluation of Industry Internship /Mini Project",
-      "held": 12,
+      "held": 14,
       "present": 8,
-      "percentage": "66.7%"
+      "percentage": "57.1%"
     },
     {
       "sno": "9",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "85.81 %",
-  "timestamp": "11/09/2026 06:11"
+  "overall_percentage": "84.64 %",
+  "timestamp": "11/09/2026 14:32"
 }
