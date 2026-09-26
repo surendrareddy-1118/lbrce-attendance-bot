@@ -52,9 +52,9 @@
     {
       "sno": "8",
       "subject": "Evaluation of Industry Internship /Mini Project",
-      "held": 16,
-      "present": 10,
-      "percentage": "62.5%"
+      "held": 18,
+      "present": 12,
+      "percentage": "66.7%"
     },
     {
       "sno": "9",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "83.28 %",
-  "timestamp": "25/09/2026 15:23"
+  "overall_percentage": "83.38 %",
+  "timestamp": "26/09/2026 06:14"
 }
