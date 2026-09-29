@@ -3,16 +3,16 @@
     {
       "sno": "1",
       "subject": "Deep Learning",
-      "held": 50,
-      "present": 35,
-      "percentage": "70.0%"
+      "held": 51,
+      "present": 36,
+      "percentage": "70.6%"
     },
     {
       "sno": "2",
       "subject": "Human Resources & Project Management",
-      "held": 29,
-      "present": 21,
-      "percentage": "72.4%"
+      "held": 30,
+      "present": 22,
+      "percentage": "73.3%"
     },
     {
       "sno": "3",
@@ -24,9 +24,9 @@
     {
       "sno": "4",
       "subject": "Generative AI",
-      "held": 56,
-      "present": 48,
-      "percentage": "85.7%"
+      "held": 57,
+      "present": 49,
+      "percentage": "86.0%"
     },
     {
       "sno": "5",
@@ -45,9 +45,9 @@
     {
       "sno": "7",
       "subject": "Constitution of India",
-      "held": 25,
-      "present": 20,
-      "percentage": "80.0%"
+      "held": 26,
+      "present": 21,
+      "percentage": "80.8%"
     },
     {
       "sno": "8",
@@ -66,9 +66,9 @@
     {
       "sno": "10",
       "subject": "SELF LEARNING",
-      "held": 13,
-      "present": 9,
-      "percentage": "69.2%"
+      "held": 14,
+      "present": 10,
+      "percentage": "71.4%"
     },
     {
       "sno": "11",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "83.29 %",
-  "timestamp": "29/09/2026 07:04"
+  "overall_percentage": "83.52 %",
+  "timestamp": "29/09/2026 16:35"
 }
