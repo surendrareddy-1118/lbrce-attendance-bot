@@ -10,9 +10,9 @@
     {
       "sno": "2",
       "subject": "Human Resources & Project Management",
-      "held": 35,
+      "held": 36,
       "present": 26,
-      "percentage": "74.3%"
+      "percentage": "72.2%"
     },
     {
       "sno": "3",
@@ -24,16 +24,16 @@
     {
       "sno": "4",
       "subject": "Generative AI",
-      "held": 68,
+      "held": 69,
       "present": 58,
-      "percentage": "85.3%"
+      "percentage": "84.1%"
     },
     {
       "sno": "5",
       "subject": "Utilization of Electrical Energy",
-      "held": 52,
+      "held": 53,
       "present": 41,
-      "percentage": "78.8%"
+      "percentage": "77.4%"
     },
     {
       "sno": "6",
@@ -52,9 +52,9 @@
     {
       "sno": "8",
       "subject": "Evaluation of Industry Internship /Mini Project",
-      "held": 20,
+      "held": 22,
       "present": 14,
-      "percentage": "70.0%"
+      "percentage": "63.6%"
     },
     {
       "sno": "9",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "83.26 %",
-  "timestamp": "23/10/2026 06:08"
+  "overall_percentage": "82.3 %",
+  "timestamp": "23/10/2026 15:19"
 }
