@@ -10,9 +10,9 @@
     {
       "sno": "2",
       "subject": "Human Resources & Project Management",
-      "held": 36,
-      "present": 26,
-      "percentage": "72.2%"
+      "held": 37,
+      "present": 27,
+      "percentage": "73.0%"
     },
     {
       "sno": "3",
@@ -31,9 +31,9 @@
     {
       "sno": "5",
       "subject": "Utilization of Electrical Energy",
-      "held": 53,
-      "present": 41,
-      "percentage": "77.4%"
+      "held": 54,
+      "present": 42,
+      "percentage": "77.8%"
     },
     {
       "sno": "6",
@@ -78,6 +78,6 @@
       "percentage": "100.0%"
     }
   ],
-  "overall_percentage": "82.3 %",
-  "timestamp": "23/10/2026 15:19"
+  "overall_percentage": "82.38 %",
+  "timestamp": "24/10/2026 06:03"
 }
